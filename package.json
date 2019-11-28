@@ -1,40 +1,35 @@
 {
-  "name": "video",
-  "version": "0.1.0",
-  "private": true,
+  "name": "p2p-video-chat",
+  "version": "1.0.0",
+  "description": "Peer 2 Peer Video Chat with WebRTC",
+  "main": "index.js",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "start": "node ./server/index.js",
-    "debug:server": "node --inspect=0.0.0.0:9229 ./server/index.js",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "start": "babel-node --presets es2015 ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/feat7/p2p-video-chat.git"
+  },
+  "keywords": [
+    "peer",
+    "p2p",
+    "video",
+    "chat"
+  ],
+  "author": "Vinay Khobragade",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/feat7/p2p-video-chat/issues"
+  },
+  "homepage": "https://github.com/feat7/p2p-video-chat#readme",
   "dependencies": {
-    "body-parser": "^1.18.3",
-    "cors": "^2.8.5",
-    "express": "^4.16.4",
-    "http": "0.0.0",
-    "path": "^0.12.7",
-    "socket.io": "^2.2.0",
-    "socket.io-client": "^2.2.0",
-    "socket.io-redis": "^5.2.0",
-    "vue": "^2.5.21",
-    "vue-loading-spinner": "^1.0.11",
-    "vue-material": "^1.0.0-beta-10.2",
-    "vue-resource": "^1.5.1",
-    "vue-router": "^3.0.1",
-    "vue-socket.io": "^3.0.5",
-    "vuex": "^3.0.1"
-  },
-  "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.3.0",
-    "@vue/cli-plugin-eslint": "^3.3.0",
-    "@vue/cli-service": "^3.3.0",
-    "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0",
-    "node-sass": "^4.9.0",
-    "sass-loader": "^7.0.1",
-    "vue-template-compiler": "^2.5.21"
+    "babel-cli": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "easyrtc": "^1.1.0",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "nconf": "^0.8.5",
+    "socket.io": "^2.0.3"
   }
 }
