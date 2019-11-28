@@ -52,7 +52,7 @@ app.set('view engine', 'ejs');
  * PORT
  * Change from settings file
  */
-let port = nconf.get('port');
+let port = process.env.PORT || nconf.get('port');
 
 /**
  * Create a webserver
